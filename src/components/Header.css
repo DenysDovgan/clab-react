@@ -1,0 +1,126 @@
+.header {
+  background: white;
+  width: 100%;
+  position: fixed;
+  top: 0;
+}
+.firstMenu {
+  height: 83px;
+  padding: 0px 35px 0px;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: space-between;
+}
+.secondMenu {
+  background: black;
+  height: 32px;
+}
+
+.logo {
+  height: 60px;
+  width: auto;
+  margin: 0;
+  position: relative;
+}
+
+.firstMenu nav {
+  position: relative;
+  display: inline-flex;
+  justify-items: center;
+}
+.navbarUl {
+  list-style-type: none;
+  margin: 110;
+  padding: 0;
+  overflow: hidden;
+}
+.navbarUl li {
+  display: inline;
+  padding: 0px 16px;
+}
+.navbarUl li * {
+  color: #000;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: 0.2s linear;
+}
+.navbarUl li *:hover {
+  color: #ff7a3d;
+}
+/* ---------------------Right Icons---------------- */
+.right-header {
+  height: 30px;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: space-between;
+}
+.right-header > .desktop-right-header {
+  display: flex;
+  width: 120px;
+  justify-content: space-between;
+  align-items: center;
+}
+.dropdownFlag {
+  display: inline-flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-content: space-around;
+  align-self: flex-start;
+  margin-top: 0;
+}
+.workingFlag {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: space-between;
+  -webkit-box-shadow: 0px 0px 15px -5px rgba(66, 68, 90, 1);
+  -moz-box-shadow: 0px 0px 15px -5px rgba(66, 68, 90, 1);
+  box-shadow: 0px 0px 15px -5px rgba(66, 68, 90, 1);
+  border: solid 1px #fff;
+  cursor: pointer;
+  border-radius: 3px;
+  height: 30px;
+  margin: 0;
+}
+.workingFlag * {
+  margin: 0px 3px;
+}
+.countryFlag {
+  display: none;
+  flex-direction: column;
+  align-content: center;
+  margin: 0;
+  width: 100%;
+  background: #fff;
+  /* border-right: 1px solid #d9d9d9;
+  border-bottom: 1px solid #d9d9d9;
+  border-left: 1px solid #d9d9d9; */
+  border-radius: 0 0 10px 10px;
+}
+.countryFlag * {
+  text-align: center;
+  margin: 7px 0px;
+}
+/* .dropdownFlag:hover .countryFlag {
+  display: flex;
+} */
+/* -------------mobile responsive--------------- */
+.mobile-navbar * {
+  display: none;
+}
+@media screen and (max-width: 1000px) {
+  .desktop-navbar * {
+    display: none;
+  }
+  .right-header > .desktop-right-header * {
+    display: none;
+  }
+  .mobile-navbar * {
+    display: block;
+  }
+}
